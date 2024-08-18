@@ -21,10 +21,11 @@ app.use("/users", userRoutes)
 
 
 /* MONGOOSE SETUP */
-const PORT = 5000;
+const PORT = 3001;
+;
 mongoose
   .connect(process.env.MONGO_URL, {
-    dbName: "chat",
+    dbName: "cluster0",
     
   })
   .then(() => {
